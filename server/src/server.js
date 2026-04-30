@@ -1,0 +1,56 @@
+import "dotenv/config";
+import express from "express";
+import authRoutes from './routes/auth.route.js';
+import { connectDb } from "./lib/db.js";
+import cookieParser from "cookie-parser";
+import cors from "cors";
+import messageRoutes from "./routes/messages.route.js";
+import { io, server,app } from "./lib/socket.js";
+
+// Normalize allowed origins and read from env. Ensure no trailing slashes.
+const normalize = (u) => (typeof u === "string" ? u.replace(/\/$/, "") : u);
+const allowedOrigins = [
+  normalize("http://localhost:5173"),
+  normalize("http://127.0.0.1:5173"),
+  normalize(process.env.CLIENT_URL),
+].filter(Boolean);
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // allow Postman, mobile apps, server-to-server (no origin)
+    if (!origin) return callback(null, true);
+
+    const incoming = normalize(origin);
+    // allow configured allowedOrigins or preview vercel deployments
+    if (allowedOrigins.includes(incoming) || incoming.endsWith(".vercel.app")) {
+      return callback(null, true);
+    }
+    return callback(new Error("CORS not allowed"));
+  },
+  credentials: true,
+  // expose headers as needed
+}));
+
+app.use(cookieParser());
+app.use(express.json({limit:"10mb"}));
+app.use(express.urlencoded({ limit: "10mb", extended: true }));
+
+app.use('/api/auth', authRoutes);
+app.use("/api/messages", messageRoutes);
+
+
+const PORT = process.env.PORT || 5000;
+
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
+server.listen(PORT, () => {
+    console.log(`server is listening on http://localhost:${PORT}`);
+    connectDb().catch(err => {
+        console.error('Error connecting to MongoDB:', err);
+        process.exit(1);
+    });
+    
+})
