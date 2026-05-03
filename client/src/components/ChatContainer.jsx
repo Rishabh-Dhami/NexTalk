@@ -28,7 +28,8 @@ const ChatContainer = () => {
     }
   }, [messages]);
 
-  const isOwn = (senderId) => normalizeId(senderId) === normalizeId(authUser?._id);
+  const isOwn = (senderId) =>
+    normalizeId(senderId) === normalizeId(authUser?._id);
 
   if (isMessagesLoading) {
     return (

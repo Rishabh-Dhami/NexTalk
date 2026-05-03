@@ -6,7 +6,9 @@ import { useChatStore } from "../store/useChatStore";
 const ChatHeader = () => {
   const { selectedUser, setSelectedUser } = useChatStore();
   const onlineUsers = useAuthStore((s) => s.onlineUsers) ?? [];
-  const isOnline = onlineUsers.some((id) => String(id) === String(selectedUser?._id));
+  const isOnline = onlineUsers.some(
+    (id) => String(id) === String(selectedUser?._id),
+  );
 
   return (
     <div className="p-2.5 border-b border-base-300">
@@ -14,7 +16,10 @@ const ChatHeader = () => {
         <div className="flex items-center gap-3">
           <div className="avatar">
             <div className="size-10 rounded-full relative">
-              <img src={selectedUser?.profilePic || "/avatar.png"} alt={selectedUser?.fullName} />
+              <img
+                src={selectedUser?.profilePic || "/avatar.png"}
+                alt={selectedUser?.fullName}
+              />
             </div>
           </div>
 

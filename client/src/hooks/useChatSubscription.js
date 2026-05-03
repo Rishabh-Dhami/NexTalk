@@ -18,7 +18,9 @@ export function useChatSubscription() {
   const selectedUser = useChatStore((s) => s.selectedUser);
   const getMessages = useChatStore((s) => s.getMessages);
   const subscribeToMessages = useChatStore((s) => s.subscribeToMessages);
-  const unsubscribeFromMessages = useChatStore((s) => s.unsubscribeFromMessages);
+  const unsubscribeFromMessages = useChatStore(
+    (s) => s.unsubscribeFromMessages,
+  );
 
   useEffect(() => {
     if (!selectedUser?._id) return;
@@ -40,5 +42,12 @@ export function useChatSubscription() {
         unsubscribeFromMessages();
       }
     };
-  }, [selectedUser?._id, socket, connectionStatus, getMessages, subscribeToMessages, unsubscribeFromMessages]);
+  }, [
+    selectedUser?._id,
+    socket,
+    connectionStatus,
+    getMessages,
+    subscribeToMessages,
+    unsubscribeFromMessages,
+  ]);
 }
