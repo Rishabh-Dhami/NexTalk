@@ -1,3 +1,4 @@
+// Message model schema with sender, receiver, text, and image fields
 import mongoose from "mongoose";
 
 const messageSchema = new mongoose.Schema(

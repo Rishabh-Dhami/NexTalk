@@ -1,3 +1,4 @@
+// Main chat display area showing messages and message input for selected user
 import { useEffect, useRef } from "react";
 import { useChatStore } from "../store/useChatStore.js";
 import { useAuthStore } from "../store/useAuthStore";

@@ -1,3 +1,4 @@
+// Profile page for viewing and updating user info and profile picture
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { Camera, Mail, User, X, AlertCircle } from "lucide-react";

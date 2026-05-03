@@ -1,3 +1,4 @@
+// Home page layout with sidebar for user list and chat area
 import { useChatStore } from "../store/useChatStore";
 
 import Sidebar from "../components/SideBar";

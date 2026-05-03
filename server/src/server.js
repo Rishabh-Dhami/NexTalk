@@ -1,3 +1,4 @@
+// Main Express server setup with CORS, routes, and Socket.IO initialization
 import "dotenv/config";
 import express from "express";
 import authRoutes from './routes/auth.route.js';

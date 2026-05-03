@@ -1,3 +1,4 @@
+// Main App component with auth checking, theme management, and route rendering
 import AppRoutes from './routes/AppRoutes.jsx'
 import Navbar from './components/Navbar.jsx'
 import { useAuthStore } from './store/useAuthStore.js';

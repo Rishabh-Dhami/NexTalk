@@ -1,3 +1,4 @@
+// Message controller: handles sending messages, retrieving messages, and user listing for chat
 import User from "../models/user.model.js";
 import Message from "../models/messages.model.js";
 import cloudinary from "../lib/cloudinaryConfig.js";

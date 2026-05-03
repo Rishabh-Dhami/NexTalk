@@ -1,3 +1,4 @@
+// Pre-configured axios instance with base API URL and credential support
 import axios from 'axios';
 
 export const axiosinstance = axios.create({

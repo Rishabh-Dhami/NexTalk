@@ -1,3 +1,4 @@
+// Authentication controller: handles signup, login, logout, and profile updates
 import { generateToken } from "../lib/utils.js"
 import User from "../models/user.model.js"
 import bcrypt, { hash } from "bcryptjs"

@@ -1,3 +1,4 @@
+// Input component for composing and sending text/image messages
 import { useRef, useState } from "react";
 import { useChatStore } from "../store/useChatStore";
 import { Image, Send, X } from "lucide-react";

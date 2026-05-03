@@ -1,3 +1,4 @@
+// Application routes with authentication guards for public and protected pages
 import SignUpPage from '../pages/SignUpPage.jsx'
 import LoginPage from '../pages/LoginPage.jsx'
 import Home from '../pages/Home.jsx'

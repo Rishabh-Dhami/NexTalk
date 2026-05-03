@@ -1,3 +1,4 @@
+// Custom hook for subscribing to real-time chat socket events
 import { useEffect } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { useChatStore } from "../store/useChatStore";

@@ -1,3 +1,4 @@
+// Central socket event names for real-time communication
 /**
  * Central socket event names. Use these everywhere to avoid typos and enable refactor.
  */

@@ -1,3 +1,4 @@
+// User model schema with email, password, profile info, and timestamps
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(

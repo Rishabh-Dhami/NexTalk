@@ -1,3 +1,4 @@
+// Socket.IO configuration for real-time messaging and online user tracking
 import { Server } from "socket.io";
 import http from "http";
 import express from "express";

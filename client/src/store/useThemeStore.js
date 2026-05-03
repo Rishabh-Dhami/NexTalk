@@ -1,3 +1,4 @@
+// Zustand store for theme management and persistence
 import { create } from "zustand";
 
 export const useThemeStore = create((set) => ({

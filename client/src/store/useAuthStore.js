@@ -1,3 +1,4 @@
+// Zustand store for authentication state, socket connection, and online users
 import { create } from "zustand";
 import { axiosinstance } from "../lib/axios";
 import toast from "react-hot-toast";

@@ -1,3 +1,4 @@
+// Header component for chat showing recipient info and online status
 import { X } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 import { useChatStore } from "../store/useChatStore";

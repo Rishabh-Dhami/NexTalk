@@ -1,3 +1,4 @@
+// Global font and layout styles component with custom CSS
 import React from 'react'
 
 const FontStyle = () => {

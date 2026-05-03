@@ -1,3 +1,4 @@
+// Sample chat messages for demo/preview purposes
 const ChatMsg = [
   { id: 1, side: "left",  text: "Hey! How's your project going? 👋", delay: 0   },
   { id: 2, side: "right", text: "Really well, almost done! 🚀",       delay: 0.6 },

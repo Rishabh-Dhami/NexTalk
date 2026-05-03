@@ -1,3 +1,4 @@
+// JWT token generation utility for authentication
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 dotenv.config();

@@ -1,3 +1,4 @@
+// Loading skeleton component for sidebar user list
 import { Users } from "lucide-react";
 
 const SidebarSkeleton = () => {

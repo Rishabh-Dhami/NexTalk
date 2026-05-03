@@ -1,3 +1,4 @@
+// Zustand store for chat messages, users, and message operations
 import { create } from "zustand";
 import toast from "react-hot-toast";
 import { axiosinstance } from "../lib/axios";

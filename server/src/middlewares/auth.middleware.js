@@ -1,3 +1,4 @@
+// Middleware to verify JWT tokens and protect authenticated routes
 import jwt from 'jsonwebtoken'
 import User from '../models/user.model.js'
 

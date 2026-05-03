@@ -1,3 +1,4 @@
+// Cloudinary configuration for image upload and storage
 import { v2 as cloudinary } from "cloudinary";
 import { config } from "dotenv";
 config()

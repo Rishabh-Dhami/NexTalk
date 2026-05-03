@@ -1,3 +1,4 @@
+// Placeholder component displayed when no chat is selected
 import { MessageSquare } from "lucide-react";
 
 const NoChatSelected = () => {

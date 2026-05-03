@@ -1,3 +1,4 @@
+// Settings page for theme selection and app preferences
 import { Send } from "lucide-react";
 import { useThemeStore } from "../store/useThemeStore";
 import { THEMES } from "../constants/Themes.js";

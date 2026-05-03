@@ -1,3 +1,4 @@
+// MongoDB database connection utility
 import mongoose from "mongoose";
 
 export const connectDb = async () => {
