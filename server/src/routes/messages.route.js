@@ -1,7 +1,11 @@
 // Message routes for sending, retrieving messages, and fetching user list
-import  { Router } from "express";
+import { Router } from "express";
 import { protectRoute } from "../middlewares/auth.middleware.js";
-import { getMessages, getUserForSidebar, sendMessage } from "../controllers/message.controller.js";
+import {
+  getMessages,
+  getUserForSidebar,
+  sendMessage,
+} from "../controllers/message.controller.js";
 
 const router = Router();
 
