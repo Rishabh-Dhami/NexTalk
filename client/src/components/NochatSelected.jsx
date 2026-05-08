@@ -12,13 +12,13 @@ const NoChatSelected = () => {
               className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center
              justify-center animate-bounce"
             >
-              <img src="./logo.png" alt="chitchat Logo" />
+              <img src="./logo.png" alt="Nextalk Logo" />
             </div>
           </div>
         </div>
 
         {/* Welcome Text */}
-        <h2 className="text-2xl font-bold">Welcome to ChitChat!</h2>
+        <h2 className="text-2xl font-bold">Welcome to Nextalk!</h2>
         <p className="text-base-content/60">
           Pick a chat thread from the left panel to begin messaging
         </p>

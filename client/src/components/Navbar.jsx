@@ -21,7 +21,7 @@ const Navbar = () => {
               <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
                 <img className="w-5 h-5" src="./logo.png" alt="logo" />
               </div>
-              <h1 className="text-lg font-bold">ChitChat</h1>
+              <h1 className="text-lg font-bold">Nextalk</h1>
             </Link>
           </div>
 
